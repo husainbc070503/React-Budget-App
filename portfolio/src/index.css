@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Fondamento', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #27323a;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+doby::-webkit-scrollbar-thumb {
+  background: #27323a;
+  border-radius: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

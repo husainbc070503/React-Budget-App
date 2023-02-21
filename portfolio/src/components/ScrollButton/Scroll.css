@@ -1,0 +1,18 @@
+.scrollBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #29bead;
+    cursor: pointer;
+}
+
+.scrollBtn .scroll {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #161725;
+}

@@ -1,0 +1,64 @@
+.about-container {
+    display: block;
+    width: 100%;
+}
+
+.about-card {
+    width: 1100px;
+    margin: 0 auto;
+    max-width: 88%;
+}
+
+.title h2 {
+    text-align: justify;
+    font-size: 2.2vw;
+    background: linear-gradient(45deg, #42e60b, #08FFC8);
+    background-size: 300px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 5s linear infinite alternate;
+    /*  color: transparent;
+    -webkit-text-stroke: 1px #42e60b; */
+}
+
+@keyframes move {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+.description h3 {
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    color: #fefefe;
+}
+
+.about-desc p {
+    margin: 30px 0;
+    text-align: justify;
+    color: #f4eeeeae;
+    font: 2vw 400;
+    word-wrap: break-word;
+    word-spacing: 2.5px;
+    line-height: 2.1rem;
+}
+
+.about-desc p>a {
+    color: #18cc7e9f;
+    font-weight: bold;
+}
+
+@media (max-width: 880px) {
+    .about-container {
+        margin-top: 6rem;
+    }
+
+    .title h2 {
+        font-size: 9vw;
+    }
+}

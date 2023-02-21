@@ -1,0 +1,115 @@
+.projects-container {
+    display: block;
+    width: 100%;
+    margin: 8rem 0;
+}
+
+.projects-content {
+    width: 1100px;
+    max-width: 88%;
+    margin: 0 auto;
+}
+
+.projects-cards {
+    margin-top: 23px;
+}
+
+.projects-cards h3 {
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 0.4px;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 30px 80px;
+}
+
+.projects .card {
+    position: relative;
+    width: 460px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 26px #d3eeff38;
+}
+
+.card .project-image,
+.project-image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card .description {
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+.card:hover .description {
+    height: 100%;
+    backdrop-filter: blur(8px);
+}
+
+.description .div {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+.div .title {
+    font-weight: bold;
+    text-align: center;
+    color: #1919e1;
+    font-size: 1.4vw;
+}
+
+.div .text {
+    font-size: 1vw;
+    color: #dddd13;
+    margin: 0 10px;
+    line-height: 1.2rem;
+}
+
+.div .text .black {
+    color: #14202c !important;
+}
+
+.div .project-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #14202c;
+    margin: 0 auto;
+    color: #ef5ef5;
+}
+
+@media (max-width: 880px) {
+
+    .projects-cards h3 {
+        line-height: 2.1rem;
+    }
+
+    .div .title {
+        font-size: 5.4vw;
+    }
+
+    .div .text {
+        font-size: 3vw;
+    }
+}
