@@ -24,7 +24,7 @@ const Scroll = () => {
         onClick={scrollToTop}
       >
         <div className="scroll">
-          <i className="fa-solid fa-arrow-up"></i>
+          <i class="fa-solid fa-arrow-up"></i>
         </div>
       </div>
     </div>
