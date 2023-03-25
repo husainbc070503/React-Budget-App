@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Book Antiqua'
+}
+
+body {
+  background: linear-gradient(to bottom right, #BAD7E9, #1a1e224d, #2b3467df);
+  height: 100vh;
+}

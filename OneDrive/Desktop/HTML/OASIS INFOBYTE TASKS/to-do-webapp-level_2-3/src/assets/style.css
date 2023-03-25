@@ -1,0 +1,190 @@
+.container {
+    padding: 0 20%;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.navbar h2 {
+    font-size: 1.2vw;
+    word-spacing: 2px;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+
+.card form {
+    width: 400px;
+    max-width: 85%;
+    background: #2B4865;
+    border-radius: 8px;
+    padding: 1.2rem;
+}
+
+/* Form */
+.card .input-group {
+    margin: 20px 0;
+    display: block;
+}
+
+.card .input-group .input {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 1vw;
+    font-family: 'Century Schoolbook';
+}
+
+.card .input::-webkit-input-placeholder {
+    color: #95999c;
+    font-size: 1vw;
+}
+
+.card .textarea {
+    min-height: 300px;
+}
+
+.card .btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 7px;
+    background: #0ce250;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    font-size: 0.90vw;
+    color: #102030;
+    font-weight: bold;
+}
+
+/* Table */
+.table {
+    flex: 60%;
+    margin-left: 30px;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    font-size: 1.3vw;
+    color: #105030;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.table tbody {
+    border-top: 2px solid #344D67;
+    width: 100%;
+}
+
+.table tbody td {
+    font-size: 0.99vw;
+    padding: 30px 10px;
+    color: #172323;
+    font-weight: bold;
+}
+
+.table td:nth-child(2) {
+    width: 50%;
+}
+
+.icon {
+    margin: 0 8px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 0.89vw;
+    cursor: pointer;
+}
+
+.icon.edit {
+    background: #FFED00;
+    color: #102030;
+}
+
+.icon.del {
+    background: #DF2E38;
+    color: #fff;
+}
+
+.icon.check {
+    background: #18d83c;
+    color: #102030;
+    border-radius: 50%;
+}
+
+.icon.disabled {
+    opacity: 0.2;
+}
+
+/* Media */
+@media (max-width: 900px) {
+    body {
+        height: auto;
+    }
+
+    .navbar h2 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .card {
+        max-width: 90%;
+        margin: 25px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .input::-webkit-input-placeholder,
+    .card .input-group .input,
+    .card .btn {
+        font-size: 4vw;
+    }
+
+    .card .textarea {
+        min-height: 200px;
+    }
+
+    .table {
+        margin: 32px 0;
+        width: 100%;
+    }
+
+    .table thead th {
+        font-size: 3.5vw;
+    }
+
+    .table tbody td {
+        line-height: 1.3rem;
+        font-size: 2.8vw;
+    }
+
+    .icon {
+        font-size: 2vw;
+        padding: 2px 5px;
+    }
+
+    .table td:nth-child(2) {
+        width: 100%;
+    }
+
+    .table td:nth-child(3) {
+        min-width: 100px;
+    }
+}
