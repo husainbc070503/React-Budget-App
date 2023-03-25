@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Century Schoolbook';
+  box-sizing: border-box;
+}
+
+body {
+  background: #7DE5ED;
+}
+
+.calc-card {
+  position: absolute;
+  width: 520px;
+  max-width: 88%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #faf7f0ad;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #5f6f9462;
+}
+
+.input-group {
+  background: #7ca4b0e3;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  display: block;
+  padding: 1.2rem 0;
+  outline: 0;
+  background: transparent;
+  border: 0;
+  color: #102030;
+  text-align: end;
+  font-size: 40px;
+}
+
+.input-group label {
+  color: #292a2ac2;
+  font-size: 20px;
+}
+
+.buttons .top {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttons .bottom {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 18px;
+  outline: 0;
+  cursor: pointer;
+  background: #8fcef3;
+  box-shadow: 0 10px 30px #848c8d65;
+}
+
+.top .btn {
+  margin: 0 20px;
+}
+
+.btn.op {
+  background: #22577E;
+  color: #fff;
+}
+
+.enter {
+  background: #36a3fc;
+  color: #fff;
+  font-weight: bold;
+  grid-column: 4/6;
+}
+
+.history {
+  width: 250px;
+  margin: 20px;
+}
+
+.history h2 {
+  font-size: 22px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #103400;
+}
+
+.history .group {
+  margin-top: 16px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.history .group p {
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  line-height: 2rem;
+}
+
+.fa {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .buttons .bottom {
+    grid-gap: 0;
+  }
+
+  .btn {
+    font-size: 15px;
+    margin: 4px;
+  }
+
+  .fa {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+  }
+
+  .history {
+    position: absolute;
+    left: -300px;
+    height: 100vh;
+    background: #344986;
+    margin: 0;
+    padding: 20px;
+    transition: left 0.4s;
+  }
+
+  .history h2 {
+    color: #fff;
+  }
+
+  .history .group p {
+    color: #DEFCF9;
+    letter-spacing: 2px;
+  }
+
+  .history.open {
+    left: 0;
+  }
+}
