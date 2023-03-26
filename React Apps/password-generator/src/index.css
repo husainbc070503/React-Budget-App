@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Book Antiqua';
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url('https://img.freepik.com/free-vector/technology-secure-abstract-background_23-2148348342.jpg?w=1060&t=st=1679834333~exp=1679834933~hmac=fe1c7971ac97748f1e452edd1f7a42397c1999b04d13ccc53831eba45e347072');
+
+  background-size: cover;
+  background-position: center center;
+}
+
+.App {
+  position: relative;
+  padding: 30px 0;
+}
+
+.App h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+
+.card {
+  width: 600px;
+  max-width: 90%;
+  margin: 20px auto;
+  display: block;
+  padding: 2rem;
+  background: #b4e4ff93;
+  border-radius: 20px;
+}
+
+.pass-field {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  height: 70px;
+}
+
+.pass-field i {
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 26px 0;
+}
+
+.input-group label {
+  font-size: 18px;
+  line-height: 2rem;
+  color: #060047;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 80px;
+  padding: 8px 8px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.input-check {
+  min-width: 15px;
+  min-height: 15px;
+  border: 0;
+  outline: 0;
+  accent-color: #18122B;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background: #13005A;
+  color: #ffeeff;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 880px) {
+  .pass-field {
+    flex-direction: column;
+    padding: 20px 0;
+    /* overflow: hidden; */
+    height: 120px;
+  }
+
+  .pass-field h3 {
+    word-wrap: break-word;
+    display: inline-block;
+  }
+
+  .input-group label {
+    font-size: 17px;
+  }
+}
